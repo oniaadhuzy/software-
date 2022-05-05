@@ -54,3 +54,11 @@ insert into course
 values (222,'线性代数','教师B',200);
 insert into course
 values (333,'概率论与数理统计','教师C',100);
+create table classroom_status
+(
+    classroom_id int null,#教室编号
+    course_id int null,#课程编号
+    week_num int null,#星期几
+    time_num int null,#第几节课
+    occupy int null#是否已被占用
+);
