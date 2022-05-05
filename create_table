@@ -1,0 +1,26 @@
+set names utf8;
+drop database if exists DB;
+create database DB charset utf8;
+use DB;
+create table user
+(
+    user_id    int         primary key,#用户编号
+    user_name  varchar(40) null,#用户名
+    user_pwd   varchar(40) null#用户密码
+);
+create table classroom
+(
+    class_id   int         primary key,#教室编号
+    class_name varchar(40) null,#教室名
+    class_loc  varchar(40) null,#教室位置
+    class_type varchar(40) null,#教室类型
+    class_max  int         null#教室最大容纳人数
+);
+create table table_name
+(
+    course_id      int         primary key,#课程编号
+    course_name    varchar(40) null,#课程名
+    course_teacher varchar(40) null,#授课教师
+    course_room    int         null,#授课教室
+    course_max     int         null#课程最大选课人数
+);
