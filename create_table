@@ -46,12 +46,11 @@ create table course
     course_id      int         primary key,#课程编号
     course_name    varchar(40) null,#课程名
     course_teacher varchar(40) null,#授课教师
-    course_room    int         null,#授课教室
     course_max     int         null#课程最大选课人数
 );
 insert into course
-values (111,'高等数学','教师A',100,300);
+values (111,'高等数学','教师A',300);
 insert into course
-values (222,'线性代数','教师B',101,200);
+values (222,'线性代数','教师B',200);
 insert into course
-values (333,'概率论与数理统计','教师C',102,100);
+values (333,'概率论与数理统计','教师C',100);
