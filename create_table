@@ -68,3 +68,10 @@ from classroom_course_status;
 create view course_status
 as select course_id,week_num,time_num
 from classroom_course_status;
+
+insert into classroom_course_status
+values (100,111,1,2);
+insert into classroom_course_status
+values (101,222,3,5);
+insert into classroom_course_status
+values (102,333,5,4);
