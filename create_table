@@ -22,25 +22,25 @@ create table classroom
     class_max  int         null#教室最大容纳人数
 );
 insert into classroom
-values (100,'三教','大教室',100);
+values (100,'三教','语音教室',100);
 insert into classroom
-values (101,'三教','中教室',50);
+values (101,'三教','普通教室',50);
 insert into classroom
-values (102,'三教','小教室',30);
+values (102,'室外','操场',30);
 insert into classroom
-values (103,'三教','大教室',100);
+values (103,'三教','语音教室',100);
 insert into classroom
-values (104,'三教','中教室',50);
+values (104,'三教','普通教室',50);
 insert into classroom
-values (105,'四教','小教室',30);
+values (105,'室外','操场',30);
 insert into classroom
-values (106,'四教','大教室',100);
+values (106,'四教','语音教室',100);
 insert into classroom
-values (107,'四教','中教室',50);
+values (107,'四教','普通教室',50);
 insert into classroom
-values (108,'四教','小教室',30);
+values (108,'室外','操场',30);
 insert into classroom
-values (109,'四教','大教室',100);
+values (109,'四教','语音教室',100);
 create table course
 (
     course_id      int         primary key,#课程编号
@@ -50,11 +50,11 @@ create table course
     course_max     int         null#课程最大选课人数
 );
 insert into course
-values (111,'高等数学','大课程','教师A',300);
+values (111,'某语音课','语音课程','教师A',300);
 insert into course
-values (222,'线性代数','中课程','教师B',200);
+values (222,'某普通课','普通课程','教师B',200);
 insert into course
-values (333,'概率论与数理统计','小课程','教师C',100);
+values (333,'某体育课','体育课程','教师C',100);
 create table classroom_course_status
 (
     classroom_id int null,#教室编号
